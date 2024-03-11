@@ -65,7 +65,7 @@ export default function About() {
 						/>
 					</div>
 					<div className='flex items-center justify-center h-1/2 font-mono text-xl font-semibold text-amber-950 text-center'>
-						Manage the card from your account
+						Manage all your gift cards from one account
 					</div>
 				</div>
 				<div className='h-64 w-full md:w-64 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
