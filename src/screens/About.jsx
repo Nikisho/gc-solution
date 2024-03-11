@@ -24,7 +24,7 @@ export default function About() {
 
 			<div className='grid self-center grid-cols-1 place-items-center space-y-2 w-full p-2
                         gap-y-4
-                        md:grid-cols-2 md:w-2/3 lg:space-y-0 lg:gap-y-4
+                        md:grid-cols-2 md:w-3/4 lg:space-y-0 lg:gap-y-4
                         xl:grid-cols-3 
                         2xl:w-1/2
                       '>
