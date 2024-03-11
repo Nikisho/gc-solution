@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function Header() {
 
     return (
-        <div className='flex justify-between w-full sticky top-0 z-50 mb-10 '>
+        <div className=' flex justify-between w-full top-0 z-50 mb-12 '>
             <div className="text-5xl mx-5 items-center text-orange-400 font-sans font-medium py-3 hover:cursor-pointer"
                 >
                 <strong>giftar</strong>
