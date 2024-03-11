@@ -20,7 +20,7 @@ export default function About() {
 				<div className='text-3xl font-semibold font-mono text-amber-950'>Benefits for everyone</div>
 			</div>
 
-			{/* Benefits cards */}
+			{/* Benefits cards test*/}
 
 			<div className='grid self-center grid-cols-1 place-items-center space-y-2 w-full p-2
                         gap-y-4
