@@ -61,7 +61,7 @@ function SignUpComponent() {
                 }
             </div>
             <div className='w-full font-mono text-amber-950 text-semibold text-xl lg:pt-5' >
-                Introducing Giftar, a gift card offering freedom to spend, control over tracking, and no hidden fees.
+                Introducing Envofa, a gift card offering freedom to spend, control over tracking, and no hidden fees.
                 Earn cashback, donate, transfer to a bank, and monitor balance effortlessly on our user-friendly site.
                 Sign up for the beta now—your email stays private.
             </div>
