@@ -11,7 +11,7 @@ function Header() {
             </div>
             <div>
 
-            <div className='m-4 flex flex-row space-x-8 text-2xl font-semibold font-mono text-amber-950'>
+            <div className='m-4 flex flex-row space-x-8 text-xl font-semibold font-mono text-amber-950 lg:text-2xl'>
                 <Link className='hover:cursor-pointer'
                     to="home"
                     smooth={true}
