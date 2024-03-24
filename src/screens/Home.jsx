@@ -27,6 +27,7 @@ function Home() {
 						height={'100%'}
 						controls
 						url={videoUrl}
+						light='/static/envofa.jpg'
 					/>
 				</div>
 
