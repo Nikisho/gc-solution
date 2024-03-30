@@ -28,6 +28,7 @@ function Home() {
 						controls
 						url={videoUrl}
 						light='/static/envofa.jpg'
+						playing={true}
 					/>
 				</div>
 
