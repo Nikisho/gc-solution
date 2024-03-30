@@ -4,7 +4,7 @@ import SignUpComponent from '../components/SignUpComponent'
 import { Link } from 'react-scroll'
 
 function Home() {
-	const videoUrl = "https://rnofxhuzlnurdiamzahy.supabase.co/storage/v1/object/public/video-bucket/videotest.mp4"
+	const videoUrl = "https://rnofxhuzlnurdiamzahy.supabase.co/storage/v1/object/public/video-bucket/envofaDemo.mp4?t=2024-03-30T22%3A19%3A22.391Z"
 	return (
 		<div className="bg-amber-100 h-screen">
 			<div className="flex flex-col justify-center h-full space-x-0 items-center m-3 space-y-10
