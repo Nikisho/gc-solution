@@ -17,7 +17,7 @@ ReactGA.send({  hitType: "pageview",
 function App() {
   return (
     <div className="bg-amber-100 h-screen" >
-      <Header />
+      {/* <Header /> */}
       <Element name="home" >
         <Home />
       </Element>
