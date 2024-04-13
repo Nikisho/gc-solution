@@ -32,11 +32,8 @@ function SignUpComponent() {
     };
 
     return (
-        <div className='flex flex-col space-y-3 w-full lg:w-1/2 xl:w-1/3  md:px-1'>
+        <div className='flex flex-col space-y-3 w-full md:px-1 xl:w-1/2'>
 
-            <div className='text-3xl font-semibold font-mono text-amber-950'>
-                Join the email list now
-            </div>
             <div>
 
                 {
@@ -60,11 +57,7 @@ function SignUpComponent() {
                         
                 }
             </div>
-            <div className='w-full font-mono text-amber-950 text-semibold text-xl lg:pt-5' >
-                Introducing Envofa, a gift card offering freedom to spend, control over tracking, and no hidden fees.
-                Earn cashback, donate, transfer to a bank, and monitor balance effortlessly on our user-friendly site.
-                Sign up for the beta now—your email stays private.
-            </div>
+
         </div>
     )
 }
