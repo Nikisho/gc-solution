@@ -9,10 +9,10 @@ function Demo() {
                 <p>Watch our demo!</p>
             </div>
             <div className='
-					h-1/2 w-full
-					md:mx-3 md:h-1/2
-					lg:w-1/2
-					xl:w-1/3
+					h-1/3 w-full
+					md:mx-3 md:h-2/3
+					
+					xl:w-1/2
 					'>
 
                 <ReactPlayer

@@ -11,9 +11,9 @@ function Home() {
 					<strong>Envofa</strong>
 				</div>
 
-				<div className=' px-2 md:px-0 md:w-1/2 text-xl font-mono'>
+				<div className=' px-2 xl:px-0 xl:w-1/2 text-xl font-mono'>
 					Did you know roughly
-					<strong> £500 </strong>
+					<strong> £500M </strong>
 					gets wasted in
 					<strong> unspent gift cards </strong>
 					each year?
@@ -22,7 +22,7 @@ function Home() {
 						will they do anything to change it?
 					</p>
 				</div>
-				<div className='px-2 md:px-0 md:w-1/2 text-xl font-mono'>
+				<div className='px-2 md:px-0 xl:w-1/2 text-xl font-mono'>
 					<strong>Envofa Gift Cards </strong>
 					are different. We give you back
 					<strong> control</strong>

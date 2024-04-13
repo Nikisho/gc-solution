@@ -35,7 +35,7 @@ export default function About() {
 
 			<div className='grid self-center grid-cols-1 place-items-center space-y-2 w-full p-2
                         gap-y-4
-                        md:grid-cols-2 md:w-3/4 lg:space-y-0 lg:gap-y-4
+                        md:grid-cols-3 md:w-2/3 lg:space-y-0 lg:gap-y-4
                         xl:grid-cols-3 xl:w-2/3
                         2xl:w-1/2
                       '>
@@ -56,7 +56,7 @@ export default function About() {
 						/>
 					</div>
 					<div className='flex items-center justify-center h-1/2 font-mono font-semibold text-amber-950 text-center'>
-						Tranfer gift money to your bank account
+						Transfer gift money to your bank account
 					</div>
 				</div>
 				<div className='h-40 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
