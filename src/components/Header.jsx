@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function Header() {
 
     return (
-        <div className='flex justify-between w-full top-0 mb-16'>
+        <div className='flex justify-between w-full top-0 mb-10'>
             <div className="rounded-lg px-2 text-4xl mx-5 items-center hover:animate-pulse text-amber-500 font-sans font-medium py-3 hover:cursor-pointer"
                 >
                 <strong>Envofa</strong>

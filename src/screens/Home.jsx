@@ -1,46 +1,40 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
-import SignUpComponent from '../components/SignUpComponent'
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 function Home() {
-	const videoUrl = "https://rnofxhuzlnurdiamzahy.supabase.co/storage/v1/object/public/video-bucket/envofaDemo.mp4?t=2024-03-30T22%3A19%3A22.391Z"
 	return (
-		<div className="bg-amber-100 h-screen">
-			<div className="flex flex-col justify-center h-full space-x-0 items-center m-3 space-y-10
-                      lg:flex-row lg:space-x-10 lg:m-0 lg:space-y-0 lg:h-2/3
-            ">
-				<div className='
-					h-1/2 w-full
-					md:mx-3 md:h-full
-					lg:w-1/2
-					xl:w-1/3
-					'>
+		<div className="bg-amber-100 h-screen flex justify-center ">
 
-					<ReactPlayer
-						className="bg-black w-full h-1/2
-					md:mx-3 md:h-full
-					lg:w-2/3 
-					xl:w-1/3
-					"	
-						width={'100%'}
-						height={'100%'}
-						controls
-						url={videoUrl}
-						light='/static/envofa.jpg'
-						playing={true}
-					/>
+			<div className='flex flex-col space-y-5 w-full items-center'>
+
+				<div className='flex my-5 justify-center font-sans text-7xl text-amber-500 border-b border-amber-500 pb-1 '>
+					<strong>Envofa</strong>
 				</div>
 
-				<SignUpComponent />
-			</div>
-			<div className='flex self-end m-5  justify-end '>
-				<Link className='hidden hover:cursor-pointer rounded-full bg-amber-600 font-mono font-semibold text-xl lg:flex justify-center items-center text-white w-9 h-9 animate-bounce'
+				<div className=' px-2 md:px-0 md:w-1/2 text-xl font-mono'>
+					Did you know roughly
+					<strong> £500 </strong>
+					gets wasted in
+					<strong> unspent gift cards </strong>
+					each year?
+					<p>
+						Who do you think pockets all that money and
+						will they do anything to change it?
+					</p>
+				</div>
+				<div className='px-2 md:px-0 md:w-1/2 text-xl font-mono'>
+					<strong>Envofa Gift Cards </strong>
+					are different. We give you back
+					<strong> control</strong>
+					<p>of your money.</p>
+				</div>
+
+				<Link className='p-2 rounded-lg text-white bg-amber-500 font-mono hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="about"
 					smooth={true}
 					duration={700}
 				>
-					&darr;
+					Learn more
 				</Link>
 			</div>
 		</div>
