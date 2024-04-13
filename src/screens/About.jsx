@@ -5,6 +5,7 @@ import FoodBankIcon from '@mui/icons-material/FoodBank';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
+import { Link } from 'react-scroll';
 
 export default function About() {
 	const handleClick = () => {
@@ -19,11 +20,11 @@ export default function About() {
 			<div className='flex text-center flex-col  self-center w-1/2 p-3 items-center h-1/6 justify-center l '>
 				<div className='text-md  font-mono text-amber-950'>
 					Receiving a gift card should be an exciting experience but nowadays, it's
-					met with annoyance and frustration. At Envofa, we want to save you time, energy and money by simplifying the 
+					met with annoyance and frustration. At Envofa, we want to save you time, energy and money by simplifying the
 					gift card experience and giving you complete control of your money
 				</div>
 				<div className='text-center text-md font-mono text-amber-950'>
-					</div>
+				</div>
 				<div className='text-center text-md  font-mono text-amber-950'>
 					Here are some of our benefits you can look forward to:
 
@@ -99,13 +100,19 @@ export default function About() {
 					</div>
 				</div>
 
+
 			</div>
 
 
-			<div className='flex self-end m-5 w-full justify-end '>
-				<button onClick={handleClick} className='hidden hover:cursor-pointer rounded-full bg-amber-600 font-mono font-semibold text-xl lg:flex justify-center items-center text-white w-9 h-9 animate-bounce'>
-					&uarr;
-				</button>
+			<div className='flex justify-center '>
+				<div></div>
+				<Link className='p-2 my-1 w-36 rounded-lg text-white bg-amber-500 font-mono hover:scale-95 hover:cursor-pointer transition duration-700'
+					to="demo"
+					smooth={true}
+					duration={700}
+				>
+					See demo
+				</Link>
 			</div>
 		</div>
 	)
