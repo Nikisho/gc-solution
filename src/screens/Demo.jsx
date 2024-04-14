@@ -4,14 +4,13 @@ import { Link } from 'react-scroll'
 function Demo() {
     const videoUrl = 'https://rnofxhuzlnurdiamzahy.supabase.co/storage/v1/object/public/video-bucket/envofaDemo.mp4?t=2024-04-13T11%3A23%3A37.503Z'
     return (
-        <div className="bg-amber-100 h-screen flex flex-col items-center justify-center space-y-2">
+        <div className="bg-amber-100 h-screen flex flex-col items-center justify-center space-y-2 ">
             <div className='text-xl font-mono my-5'>
                 <p>Watch our demo!</p>
             </div>
             <div className='
 					h-1/3 w-full
 					md:mx-3 md:h-2/3
-					
 					xl:w-1/2
 					'>
 
