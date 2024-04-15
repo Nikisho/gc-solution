@@ -43,7 +43,7 @@ function Home() {
                         xl:grid-cols-3 xl:w-1/2
                         2xl:w-1/2
                       '>
-					<div className='h-32 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+					<div className='h-28 w-full md:w-44 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 						<div className='w-full flex items-center justify-center h-1/2 bg-amber-300 '>
 							<CurrencyPoundIcon
 								fontSize='large'
@@ -53,7 +53,7 @@ function Home() {
 							Top up your card for expensive purchases
 						</div>
 					</div>
-					<div className='h-32 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+					<div className='h-28 w-full md:w-44 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 						<div className='w-full flex items-center justify-center h-1/2 bg-amber-300 '>
 							<PaymentsIcon
 								fontSize='large'
@@ -63,7 +63,7 @@ function Home() {
 							Transfer gift money to your bank account
 						</div>
 					</div>
-					<div className='h-32 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+					<div className='h-28 w-full md:w-44 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 						<div className='w-full flex items-center justify-center h-1/2 bg-amber-300  '>
 							<FoodBankIcon
 								fontSize='large'
@@ -73,17 +73,17 @@ function Home() {
 							Donate to your favourite charities
 						</div>
 					</div>
-					<div className='h-32 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+					<div className='h-28 w-full md:w-44 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 						<div className='w-full flex items-center justify-center h-1/2 bg-amber-300 '>
 							<ManageSearchIcon
 								fontSize='large'
 							/>
 						</div>
-						<div className='flex items-center justify-center h-1/2 text-sm font-mono font-semibold text-amber-950 text-center'>
+						<div className='flex my-1 items-center justify-center h-1/2 text-sm font-mono font-semibold text-amber-950 text-center'>
 							Manage all your gift cards from one account
 						</div>
 					</div>
-					<div className='h-32 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+					<div className='h-28 w-full md:w-44 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 						<div className='w-full flex items-center justify-center h-1/2 bg-amber-300'>
 							<VisibilityIcon
 								fontSize='large'
@@ -93,7 +93,7 @@ function Home() {
 							<p>Track your balance and expiry date</p>
 						</div>
 					</div>
-					<div className='h-32 w-full md:w-40 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
+					<div className='h-28 w-full md:w-44 bg-amber-50 rounded-xl shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
 						<div className='w-full flex items-center justify-center h-1/2 bg-amber-300'>
 							<CardGiftcardIcon
 								fontSize='large'
