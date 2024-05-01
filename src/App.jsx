@@ -14,15 +14,15 @@ ReactGA.send({  hitType: "pageview",
 
 function App() {
   return (
-    <div className="bg-amber-100 h-screen" >
+    <div className="bg-gradient-to-r from-cyan-600 h-screen" >
       {/* <Header /> */}
-      <Element name="home" >
+      <Element name="home"  className=" ">
         <Home />
       </Element>
-      <Element name="demo" className="bg-amber-100">
+      <Element name="demo" className="">
         <Demo />
       </Element>
-      <Element name="signup" className="bg-amber-100">
+      <Element name="signup" className="">
         <SignUp />
       </Element>
     </div>
