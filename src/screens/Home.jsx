@@ -28,7 +28,7 @@ function Home() {
 
 				<div className='w-full xl:w-1/2 px-5 '>
 
-					<div className=' font-sans text-7xl my-5'>
+					<div className=' font-sans text-7xl my-5 text-sky-900'>
 						<strong>Envofa</strong>
 					</div>
 
