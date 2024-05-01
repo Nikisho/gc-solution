@@ -14,7 +14,7 @@ ReactGA.send({  hitType: "pageview",
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-cyan-600 h-screen" >
+    <div className="bg-gradient-to-tr from-cyan-700 " >
       {/* <Header /> */}
       <Element name="home"  className=" ">
         <Home />

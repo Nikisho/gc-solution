@@ -32,7 +32,7 @@ function SignUpComponent() {
     };
 
     return (
-        <div className='flex flex-col space-y-3 w-full md:px-1 xl:w-1/2'>
+        <div className='flex flex-col space-y-3 w-full md:px-1 xl:w-1/2 2xl:w-1/3'>
 
             <div>
 

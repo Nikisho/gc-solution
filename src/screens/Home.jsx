@@ -23,17 +23,17 @@ function Home() {
 	return (
 
 
-		<div className='h-screen md:mb- '>
-			<div className="items-center h-5/6 flex flex-col xl:flex-row ">
+		<div className='h-auto xl:h-screen flex flex-col items-center '>
+			<div className="items-center h-5/6 justify-center flex flex-col xl:flex-row 2xl:w-2/3 ">
 
 				<div className='w-full xl:w-1/2 px-5 '>
 
 					<div className=' font-sans text-7xl my-5'>
 						<strong>Envofa</strong>
 					</div>
-					<Fade in={true} timeout={5000}>
 
-						<div className='flex h-3/4 '>
+					<div className='flex h-3/4 '>
+						<Collapse in={open} orientation='vertical' timeout={2000}>
 
 							<div className=' text-xl xl:px-0 font-sans space-y-1 mx-1 self-center xl:w-4/5'>
 								Did you know roughly
@@ -55,8 +55,9 @@ function Home() {
 								<strong> control </strong>
 								of your money.
 							</div>
-						</div>
-					</Fade>
+						</Collapse>
+
+					</div>
 
 
 				</div>
@@ -73,7 +74,7 @@ function Home() {
 					<Collapse in={open} orientation='horizontal' timeout={2000} >
 
 
-						<div className='h-32 w-full md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col justify-between'>
+						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2  '>
 								<CurrencyPoundIcon
 									fontSize='large'
@@ -89,7 +90,7 @@ function Home() {
 					<Collapse in={open} orientation='horizontal' timeout={2000} >
 
 
-						<div className='h-32 w-full md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2 '>
 								<PaymentsIcon
 									fontSize='large'
@@ -105,7 +106,7 @@ function Home() {
 					<Collapse in={open} orientation='horizontal' timeout={2000} className='' >
 
 
-						<div className='h-32 w-full md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2   '>
 								<FoodBankIcon
 									fontSize='large'
@@ -120,7 +121,7 @@ function Home() {
 
 					<Collapse in={open} orientation='horizontal' timeout={2000} >
 
-						<div className='h-32 w-full md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2  '>
 								<ManageSearchIcon
 									fontSize='large'
@@ -137,7 +138,7 @@ function Home() {
 					<Collapse in={open} orientation='horizontal' timeout={2000} >
 
 
-						<div className='h-32 w-full md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2 '>
 								<VisibilityIcon
 									fontSize='large'
@@ -154,7 +155,7 @@ function Home() {
 					<Collapse in={open} orientation='horizontal' timeout={2000} >
 
 
-						<div className='h-32 w-full md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
+						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
 							<div className='w-full flex items-center justify-center h-1/2 '>
 								<CardGiftcardIcon
 									fontSize='large'
@@ -168,8 +169,9 @@ function Home() {
 				</div>
 
 
+				<Fade in={true} timeout={5000}>
 
-				<div className='grid self-center place-items-center mt-10 grid-cols-2 w-full p-2
+					<div className='grid self-center place-items-center mt-10 grid-cols-2 w-full p-2
                         gap-y-4
 						md:hidden
 						h-fit
@@ -177,7 +179,7 @@ function Home() {
 
 
 
-						<div className='h-32 w-40 md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col justify-between'>
+						<div className='h-32 w-40 md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2  '>
 								<CurrencyPoundIcon
 									fontSize='large'
@@ -190,8 +192,7 @@ function Home() {
 
 
 
-
-						<div className='h-32 w-40  md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2 '>
 								<PaymentsIcon
 									fontSize='large'
@@ -204,7 +205,7 @@ function Home() {
 
 
 
-						<div className='h-32 w-40  md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2   '>
 								<FoodBankIcon
 									fontSize='large'
@@ -217,7 +218,7 @@ function Home() {
 
 
 
-						<div className='h-32 w-40  md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2  '>
 								<ManageSearchIcon
 									fontSize='large'
@@ -232,7 +233,7 @@ function Home() {
 
 
 
-						<div className='h-32 w-40  md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
+						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
 							<div className='w-full flex items-center justify-center h-1/2 '>
 								<VisibilityIcon
 									fontSize='large'
@@ -247,7 +248,7 @@ function Home() {
 
 
 
-						<div className='h-32 w-40  md:w-44 bg-teal-500 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
+						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
 							<div className='w-full flex items-center justify-center h-1/2 '>
 								<CardGiftcardIcon
 									fontSize='large'
@@ -257,12 +258,13 @@ function Home() {
 								<p >Shop at your favourites</p>
 							</div>
 						</div>
-				</div>
+					</div>
+				</Fade>
 
 			</div>
-			<div className='w-full  justify-center hidden xl:flex'>
+			<div className='w-full mt-5 justify-center flex'>
 
-				<Link className='rounded-full shadow-xl font-bold p-2 px-10 text-white bg-gradient-to-r from-cyan-800 hover:scale-95 hover:cursor-pointer transition duration-700'
+				<Link className='rounded-full shadow-xl font-semibold p-2 animate-pulse px-10 bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="demo"
 					smooth={true}
 					duration={700}
