@@ -6,7 +6,8 @@ import FoodBankIcon from '@mui/icons-material/FoodBank';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
-import { Collapse, Fade } from '@mui/material';
+import { Collapse } from '@mui/material';
+import CardComponentCollapse from '../components/CardComponentCollapse';
 
 function Home() {
 	const delay = (ms) => new Promise(res => setTimeout(res, ms));
@@ -20,9 +21,35 @@ function Home() {
 		collapseElements();
 	}, [])
 
+
+	const cards = [
+
+		{
+			icon: CurrencyPoundIcon,
+			text: 'Top up your card for expensive purchases'
+		},
+		{
+			icon: PaymentsIcon,
+			text: 'Transfer gift money to your bank account'
+		},
+		{
+			icon: FoodBankIcon,
+			text: 'Donate to your favourite charities'
+		},
+		{
+			icon: ManageSearchIcon,
+			text: 'Manage all your gift cards from one accoun'
+		},
+		{
+			icon: VisibilityIcon,
+			text: 'Track your balance and expiry date'
+		},
+		{
+			icon: CardGiftcardIcon,
+			text: 'Shop at your favourites'
+		}
+	]
 	return (
-
-
 		<div className='h-auto xl:h-screen flex flex-col items-center '>
 			<div className="items-center h-5/6 justify-center flex flex-col xl:flex-row 2xl:w-2/3 ">
 
@@ -56,211 +83,22 @@ function Home() {
 								of your money.
 							</div>
 						</Collapse>
-
 					</div>
-
-
 				</div>
 
-				<div className='md:grid self-center place-items-center md:mt-12 grid-cols-1  space-y-2 w-full p-2
-                        gap-y-4
-                        md:grid-cols-3 md:w-full lg:space-y-0 lg:gap-y-4
-                        xl:grid-cols-3 xl:w-1/2 
-                        2xl:w-1/2
-						
-					   hidden
-                      '>
+				<div className='grid grid-cols-2 self-center place-items-center md:mt-12 space-y-2 w-full p-2
+								gap-y-4
+								md:grid-cols-3 md:w-full lg:space-y-0 lg:gap-y-4
+								xl:grid-cols-3 xl:w-1/2 
+								2xl:w-1/2
+                '>
+					{
+						cards?.map((card) => (
+							<CardComponentCollapse bool={open} Icon={card.icon} text={card.text} />
+						))
+					}
 
-					<Collapse in={open} orientation='horizontal' timeout={2000} >
-
-
-						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2  '>
-								<CurrencyPoundIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2 font-sans  font-semibold  text-center'>
-								Top up your card for expensive purchases
-							</div>
-						</div>
-
-					</Collapse>
-
-					<Collapse in={open} orientation='horizontal' timeout={2000} >
-
-
-						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2 '>
-								<PaymentsIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2 font-sans text font-semibold  text-center'>
-								Transfer gift money to your bank account
-							</div>
-						</div>
-
-					</Collapse>
-
-					<Collapse in={open} orientation='horizontal' timeout={2000} className='' >
-
-
-						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2   '>
-								<FoodBankIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2  font-sans font-semibold  text-center'>
-								Donate to your favourite charities
-							</div>
-						</div>
-					</Collapse>
-
-
-					<Collapse in={open} orientation='horizontal' timeout={2000} >
-
-						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2  '>
-								<ManageSearchIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex my-1 items-center justify-center h-1/2  font-sans font-semibold  text-center'>
-								Manage all your gift cards from one account
-							</div>
-						</div>
-
-					</Collapse>
-
-
-					<Collapse in={open} orientation='horizontal' timeout={2000} >
-
-
-						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2 '>
-								<VisibilityIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2   font-sans font-semibold  text-center'>
-								<p>Track your balance and expiry date</p>
-							</div>
-						</div>
-
-
-					</Collapse>
-
-					<Collapse in={open} orientation='horizontal' timeout={2000} >
-
-
-						<div className='h-32 w-full md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
-							<div className='w-full flex items-center justify-center h-1/2 '>
-								<CardGiftcardIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center  h-1/2 font-sans font-semibold  text-center'>
-								<p >Shop at your favourites</p>
-							</div>
-						</div>
-					</Collapse>
 				</div>
-
-
-				<Fade in={true} timeout={5000}>
-
-					<div className='grid self-center place-items-center mt-10 grid-cols-2 w-full p-2
-                        gap-y-4
-						md:hidden
-						h-fit
-                      '>
-
-
-
-						<div className='h-32 w-40 md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2  '>
-								<CurrencyPoundIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2 font-sans  font-semibold  text-center'>
-								Top up your card for expensive purchases
-							</div>
-						</div>
-
-
-
-						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2 '>
-								<PaymentsIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2 font-sans text font-semibold  text-center'>
-								Transfer gift money to your bank account
-							</div>
-						</div>
-
-
-
-						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2   '>
-								<FoodBankIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2  font-sans font-semibold  text-center'>
-								Donate to your favourite charities
-							</div>
-						</div>
-
-
-
-						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2  '>
-								<ManageSearchIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex my-1 items-center justify-center h-1/2  font-sans font-semibold  text-center'>
-								Manage all your gift cards from one account
-							</div>
-						</div>
-
-
-
-
-
-						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col  justify-between'>
-							<div className='w-full flex items-center justify-center h-1/2 '>
-								<VisibilityIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center h-1/2   font-sans font-semibold  text-center'>
-								<p>Track your balance and expiry date</p>
-							</div>
-						</div>
-
-
-
-
-
-						<div className='h-32 w-40  md:w-44 bg-cyan-600 rounded-lg shadow-xl hover:scale-95 duration-700 p-2 flex flex-col '>
-							<div className='w-full flex items-center justify-center h-1/2 '>
-								<CardGiftcardIcon
-									fontSize='large'
-								/>
-							</div>
-							<div className='flex items-center justify-center  h-1/2 font-sans font-semibold  text-center'>
-								<p >Shop at your favourites</p>
-							</div>
-						</div>
-					</div>
-				</Fade>
-
 			</div>
 			<div className='w-full mt-5 justify-center flex'>
 
