@@ -28,7 +28,7 @@ function Demo() {
                     playing={true}
                 />
             </div>
-            <Link className='p-2 rounded-full shadow-xl font-semibold px-5 bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
+            <Link className='p-2 rounded-full animate-pulse shadow-xl font-semibold px-5 bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
                 to="signup"
                 smooth={true}
                 duration={700}
