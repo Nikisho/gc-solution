@@ -8,6 +8,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import { Collapse } from '@mui/material';
 import CardComponentCollapse from '../components/CardComponentCollapse';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 function Home() {
 	const delay = (ms) => new Promise(res => setTimeout(res, ms));
@@ -23,30 +24,29 @@ function Home() {
 
 
 	const cards = [
-
-		{
-			icon: CurrencyPoundIcon,
-			text: 'Top up your card for expensive purchases'
-		},
 		{
 			icon: PaymentsIcon,
-			text: 'Transfer gift money to your bank account'
-		},
-		{
-			icon: FoodBankIcon,
-			text: 'Donate to your favourite charities'
-		},
-		{
-			icon: ManageSearchIcon,
-			text: 'Manage all your gift cards from one account'
+			text: 'Send money to your bank account'
 		},
 		{
 			icon: VisibilityIcon,
 			text: 'Track your balance and expiry date'
 		},
 		{
+			icon: FoodBankIcon,
+			text: 'Donate to your favourite charities'
+		},
+		{
+			icon: CurrencyPoundIcon,
+			text: 'Top up your card with more money'
+		},
+		{
 			icon: CardGiftcardIcon,
 			text: 'Shop at your favourites'
+		},
+		{
+			icon: ManageSearchIcon,
+			text: 'Manage your cards from one account'
 		}
 	]
 	return (
@@ -100,15 +100,17 @@ function Home() {
 
 				</div>
 			</div>
-			<div className='w-full mt-5 justify-center flex'>
-
-				<Link className='rounded-full shadow-xl font-semibold p-2 animate-pulse px-10 bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
+			<div className='w-full mt-4 justify-center flex flex-col items-center space-y-1'>
+				<p className='font-semibold'>See demo</p>
+				<Link className='rounded-full shadow-xl font-semibold h-9 w-9 flex justify-center items-center animate-pulse bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="demo"
 					smooth={true}
 					duration={700}
-					style={{ width: '10' }}
+					// style={{ width: '10' }}
 				>
-					See demo
+					<ArrowDownwardIcon 
+						fontSize='small'
+					/>
 				</Link>
 			</div>
 		</div>
