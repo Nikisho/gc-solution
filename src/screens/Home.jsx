@@ -38,7 +38,7 @@ function Home() {
 		},
 		{
 			icon: ManageSearchIcon,
-			text: 'Manage all your gift cards from one accoun'
+			text: 'Manage all your gift cards from one account'
 		},
 		{
 			icon: VisibilityIcon,
@@ -86,7 +86,7 @@ function Home() {
 					</div>
 				</div>
 
-				<div className='grid grid-cols-2 self-center place-items-center md:mt-12 space-y-2 w-full p-2
+				<div className='grid grid-cols-2 self-center place-items-center md:mt-12 space-y-2 w-full
 								gap-y-4
 								md:grid-cols-3 md:w-full lg:space-y-0 lg:gap-y-4
 								xl:grid-cols-3 xl:w-1/2 
