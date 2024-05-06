@@ -55,7 +55,7 @@ function Home() {
 
 				<div className='w-full xl:w-1/2 px-5 '>
 
-					<div className=' font-sans text-7xl my-5 text-sky-900'>
+					<div className=' font-sans text-7xl my-5 text-amber-500'>
 						<strong>Envofa</strong>
 					</div>
 
@@ -68,10 +68,10 @@ function Home() {
 								gets wasted in
 								<strong> unspent gift cards </strong>
 								each year?
-								<p>
+								{/* <p>
 									Who do you think pockets all that money and
 									will they do anything to change it?
-								</p>
+								</p> */}
 								<p className='py-2'>
 									From spending caps and hidden management fees to shops you’ve never heard of,
 									receiving and using a gift card shouldn’t be an annoying or frustrating experience.
@@ -102,7 +102,7 @@ function Home() {
 			</div>
 			<div className='w-full mt-4 justify-center flex flex-col items-center space-y-1'>
 				<p className='font-semibold'>See demo</p>
-				<Link className='rounded-full shadow-xl font-semibold h-9 w-9 flex justify-center items-center animate-pulse bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
+				<Link className='rounded-full shadow-xl font-semibold h-9 w-9 flex justify-center items-center animate-pulse bg-orange-300 hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="demo"
 					smooth={true}
 					duration={700}

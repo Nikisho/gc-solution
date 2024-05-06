@@ -26,13 +26,13 @@ function Demo() {
                     height={'100%'}
                     controls
                     url={videoUrl}
-                    light='/static/envofa.jpg'
+                    light='/static/envofa2.jpg'
                     playing={true}
                 />
             </div>
 			<div className='w-full mt-4 justify-center flex flex-col items-center space-y-1'>
 				<p className='font-semibold'>Sign up for beta</p>
-				<Link className='rounded-full shadow-xl font-semibold h-9 w-9 flex justify-center items-center animate-pulse bg-cyan-600 hover:scale-95 hover:cursor-pointer transition duration-700'
+				<Link className='rounded-full shadow-xl font-semibold h-9 w-9 flex justify-center items-center animate-pulse bg-orange-300 hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="signup"
 					smooth={true}
 					duration={700}

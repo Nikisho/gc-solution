@@ -41,14 +41,14 @@ function SignUpComponent() {
                     <div className='transition-opacity ease-in duration-700 font-sans text-green-600'>
                         Thank you for signing up! &#10003;
                     </div> :
-                        <div className={`${changeOpacity ? 'transition-opacity ease-in duration-700 opacity-0 ' : ''}`}>
-                            <input className=' h-10 w-2/3   border-2 border-gray-400 p-4 rounded-l-xl'
+                        <div className={`items-center flex ${changeOpacity ? 'transition-opacity ease-in duration-700 opacity-0 ' : ''}`}>
+                            <input className=' h-10 w-2/3   border-1 border-gray-400 p-4 rounded-l-xl'
                                 placeholder='example@gmail.com'
                                 value={email}
                                 onChange={handleInputChange}
                             >
                             </input>
-                            <button className='h-10 w-1/3 rounded-r-xl bg-cyan-800 text-white font-semibold font-sans text-xl'
+                            <button className='h-10 w-1/3 rounded-r-xl bg-orange-300 font-bold font-sans text-lg'
                                 type='submit'
                                 onClick={() => sendEmail()}>
                                 Sign up
