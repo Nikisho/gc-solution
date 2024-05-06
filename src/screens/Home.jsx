@@ -50,8 +50,8 @@ function Home() {
 		}
 	]
 	return (
-		<div className='h-auto xl:h-screen flex flex-col items-center '>
-			<div className="items-center h-5/6 justify-center flex flex-col xl:flex-row 2xl:w-2/3 ">
+		<div className='h-auto xl:h-screen flex flex-col items-center space-y-5 xl:space-y-0 '>
+			<div className="items-center h-5/6 justify-center flex flex-col space-y-2  xl:flex-row 2xl:w-2/3 ">
 
 				<div className='w-full xl:w-1/2 px-5 '>
 
