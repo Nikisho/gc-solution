@@ -31,7 +31,7 @@ function Demo() {
                 />
             </div>
 			<div className='w-full mt-4 justify-center flex flex-col items-center space-y-1'>
-				<p className='font-semibold text-lg'>Sign up for beta</p>
+				<p className='font-semibold text-xl'>Sign up for beta</p>
 				<Link className='rounded-full shadow-xl font-semibold h-11 w-11 flex justify-center items-center animate-pulse bg-orange-500 hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="signup"
 					smooth={true}

@@ -101,7 +101,7 @@ function Home() {
 				</div>
 			</div>
 			<div className='w-full justify-center flex flex-col items-center space-y-1'>
-				<p className='font-semibold text-lg'>See demo</p>
+				<p className='font-semibold text-xl'>See demo</p>
 				<Link className='rounded-full shadow-xl font-semibold h-11 w-11 flex justify-center items-center animate-pulse bg-orange-500 hover:scale-95 hover:cursor-pointer transition duration-700'
 					to="demo"
 					smooth={true}

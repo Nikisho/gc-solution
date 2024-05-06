@@ -8,7 +8,7 @@ function SignUp() {
 
                 <div className='p-2 xl:p-0 xl:px-2 xl:w-1/2 font-sans text-xl 2xl:w-1/3 '>
                 Be among the first! Sign up for beta access and updates by providing your email. 
-                We'll keep you posted
+                We'll keep you posted.
                 </div>
                 <SignUpComponent />
             </div>
