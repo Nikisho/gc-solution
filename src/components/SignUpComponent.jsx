@@ -48,7 +48,7 @@ function SignUpComponent() {
                                 onChange={handleInputChange}
                             >
                             </input>
-                            <button className='h-10 w-1/3 rounded-r-xl bg-orange-300 font-bold font-sans text-lg'
+                            <button className='h-10 w-1/3 rounded-r-xl bg-orange-400 hover:scale-95 transition duration-700 font-bold font-sans text-lg'
                                 type='submit'
                                 onClick={() => sendEmail()}>
                                 Sign up
