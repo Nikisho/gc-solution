@@ -74,7 +74,7 @@ function Home() {
 								</p> */}
 								<p className='py-2'>
 									From spending caps and hidden management fees to shops you’ve never heard of,
-									receiving and using a gift card shouldn’t be an annoying or frustrating experience.
+									receiving and using a gift card shouldn’t be an annoying experience.
 								</p>
 
 								<strong>Envofa Gift Cards </strong>
