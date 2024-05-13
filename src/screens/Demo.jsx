@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 function Demo() {
-    const videoUrl = 'https://rnofxhuzlnurdiamzahy.supabase.co/storage/v1/object/public/video-bucket/envofaDemo.mp4?t=2024-04-13T11%3A23%3A37.503Z'
+    const videoUrl = 'https://rnofxhuzlnurdiamzahy.supabase.co/storage/v1/object/public/video-bucket/videotest1.mov?t=2024-05-13T08%3A57%3A31.580Z'
     return (
         <div className="h-screen  flex flex-col items-center justify-center space-y-5 px-2 ">
             <div className='text-xl font-sans font-bold '>
